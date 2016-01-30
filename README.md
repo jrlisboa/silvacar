@@ -1,2 +1,10 @@
 # silvacar
-Este é um site criado para um centro automotivo com um sistema em PHP de login para cientes, funcionários, cadastro de serviços e constatação do andamento do serviço prestado.
+
+
+Este website foi construido como projeto do curso técnico de informática para internet que participei.
+O site consiste em auxiliar o centro automotivo em sua divugação, e gerenciamento de clientes, funcionários e serviços em andamento.
+
+O sistema permite que um cliente acesse o site com seu login, que será cadastrado na loja, e veja quais são os serviços que estão em andamento, serviços concluídos e possa efetuar um balanço total do valor de manutenção de seu veículo.
+O adiministrador tem a possibilidade de efetuar cadastro de clientes e de novos serviços, indicando para qual cliente aquele serviço está sendo prestado, prazo de entrega, valor etc. E também consegue acompanhar os serviços que estão em andamento e visualizar as informações de seus clientes.
+
+Se trata de um sistema em PHP / mySQL. Contribuições serão bem-vindas para a construção de um futuro sistema genérico.
