@@ -1,0 +1,201 @@
+*{
+		font-family: arial;
+}
+.conteudo-form{
+
+	width: 700px;
+	background-color: #ccc;
+	padding: 30px;
+	border-radius: 5px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.tit-form-cadastro{
+
+	font-size: 25px;
+	color: #F39C12;
+	font-family: arial;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.voltar{
+
+	font-size: 15px;
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	background-color: #27AE60;
+	padding: 5px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+
+.voltar:hover{
+
+	background-color: #2C3E50;
+	transition: 1s;
+}
+.sair{
+
+	font-size: 15px;
+	float: right;
+	text-decoration: none;
+	color: #fff;
+	background-color: #E74C3C;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.sair:hover{
+
+	background-color: #C0392B;
+	transition: 1s;
+}
+
+.l-contato-cadastro{
+
+	font-size: 18px;
+	margin-right: 300px;
+	color: #1a1a1a;
+}
+
+.btn-cadastrar{
+
+	    width: 200px;
+    height: 35px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-top: 30px;
+    border-bottom: 3px solid #D35400;
+}
+
+.btn-cadastrar:hover{
+
+    transition: 0.4s;
+    color: #fff;
+    background-color: #D35400;
+    cursor: pointer;
+
+}
+
+.caixa1{
+
+	width: 390px;
+	height: 26px;
+	border: none;
+	box-shadow: 0 0 3px 0 #555;
+	border-radius: 5px;
+	margin-top: 10px;
+		border-bottom: 3px solid #555;
+	font-size: 18px;
+	padding: 5px;
+}
+
+.caixa1:hover{
+
+	transition: 0.5s;
+	border-bottom: 3px solid #F39C12;
+}
+
+.imagem-perfil{
+
+	width: 150px;
+	height: 150px;
+	float: right;
+	background-color: black;
+	margin-top: 10px;px;
+	margin-right: 50px;
+	border-radius: 5px;
+	background-image: url("../img/perfil2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.conteudo-perfil{
+
+	width: 80%;
+	background-color: #f7f7f7;
+	padding: 30px;
+	border-radius: 5px;
+	margin-top: 40px;
+	font-family: arial;
+	margin-bottom: 50px;
+	height: 200px;
+	border-bottom: 2px solid #1a1a1a;
+}
+
+.tit-perfil{
+
+	font-size: 20px;
+	background-color: #F39C12;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.nome-perfil{
+
+	font-size: 28px;
+	margin-bottom: -150px;
+	margin-top: 80px;
+	background-color: #2C3E50;
+	padding: 20px;
+	text-align: left;
+	border-radius: 5px;
+	color: #fff
+}
+.esquerda{
+
+    width: 500px;
+    float: right;
+}
+
+.direita{
+
+	width: 400px;
+	float: left;
+	margin-top: 60px;
+	margin-left: 80px;
+	text-align: left;
+}
+
+.concluidos{
+
+	margin-bottom: 40px;
+}
+
+.numero-direita{
+
+	float: right;
+	font-size: 40px;
+	margin-top: -10px;
+}
+
+.tit-direita{
+
+	font-size: 20px;
+}
+
+.tit-tabelinha{
+
+	font-size: 22px;
+}
+.tabelinha td{
+
+	box-shadow: 0 0 3px 0 #555;
+	padding: 15px;
+	margin: 10px;
+}
+.tabelinha table{
+
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,614 @@
+/*aqui é o css do top*/
+
+.topo{
+
+    height: 80px;
+    width: 1000px;
+}
+
+/* aqui é o lugar do banner*/
+
+.banner{
+
+    min-height: 400px;
+    width: 100%;
+    background-color: #BDC3C7;
+    background-image: url("../img/fundo.jpg");
+    border-top: 6px solid #F39C12;
+}
+
+.textos h1{
+
+    color: #D35400;
+    font-size: 2.5em;
+    margin-top: -0px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+
+.banner h2{
+
+    color: #7F8C8D;
+    font-size: 1.8em;
+    margin-right: 40px;
+}
+
+.textos{
+
+    padding-top: 50px;
+    background-color: #f7f7f7;
+    width: 60%;
+    height: 30%;
+    margin: 80px;
+    margin-left: 20px;
+    position: absolute;
+    box-shadow: 0 0 20px 0 #000;
+    border-radius: 2px;
+}
+.textos:hover{
+
+     opacity: 0.5;
+        filter: alpha(opacity=50);
+    transition: 1.5s;
+}
+
+.botoes{
+
+    width: 350px;
+    height: 100px;
+    margin: 100px;
+    position: relative;
+    float: right;
+    margin-right:50px;
+    margin-left: 0px;
+    margin-top: 200px;
+    margin-top: 80px;
+}
+
+.botao{
+
+    float: right;
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    padding-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 30px 0 #000;
+    width: 50px;
+    border-radius: 5px;
+}
+.botao a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.botao1{
+
+    background-color: #16A085;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 80px;
+}
+
+.botao3{
+
+    background-color: #F39C12;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 80px;
+    margin-right: 10px;
+}
+.botao4{
+
+    background-color: #27ae60;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 80px;
+    margin-right: 10px;
+}
+
+.botao1:hover{
+
+    background-color: #2ECC71;
+    transition: 1.5s;
+}
+
+.botao2{
+
+    background-color: #2980B9;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 80px;
+    margin-right: 10px;
+}
+.botao2:hover{
+
+    background-color: #3498DB;
+    transition: 0.2s;
+}
+
+.imagem-topo{
+
+    margin-right: 500px;
+    margin-top: 20px;
+}
+.textinho-top{
+
+    margin-left: 550px;
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-top: -40px;
+}
+
+
+/* Aqui começa o css do menu*/
+
+#sse3
+{
+    background-color: #999;
+    height: 50px;
+    clear:both;
+    text-align:center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    z-index: 1;
+}
+        
+#sses3
+{
+    margin: 0 auto;
+    border-left:solid 1px white;
+    margin-top: -10px;
+}
+        
+#sses3 ul
+{
+    font: normal 13px Arial;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+}
+        
+#sses3 li
+{
+    background: #F90;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;background-image:none;
+    border-right:solid 1px white;
+}
+        
+#sses3 li.current, #sses3 .slip
+{
+    background-color: #666;
+}
+        
+#sses3 li a
+{
+    text-align: center;
+    text-decoration: none;
+    padding: 0 30px;
+    color: white;
+    display: block;
+    z-index: 2;
+    white-space:nowrap;
+}
+        
+#sses3 li.current a
+{
+    color: white;
+}
+        
+#sses3 .slip
+{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.espaco-menu{
+
+    margin-left: 60px;
+}
+
+/* aqui começa o container*/
+
+
+
+
+.container{
+
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    margin-top: 0px;
+    padding: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.seta{
+
+    height: 60px;
+    width: 60px;
+    background-image: url("../img/seta.png");
+    margin-bottom: 30px;
+}
+
+.tit-pagina{
+
+    font-size: 30px;
+     color: #fff;
+     background-color: #F39C12;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+.servico{
+
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+     padding-top: 40px;
+     margin-top: -20px;
+
+}
+
+.servicos{
+
+    margin-left: 30px;
+    margin-top: 20px;
+
+
+}
+
+.eletrica{
+
+    background-image: url("../img/eletrica.jpg");
+}
+.mecanica{
+
+    background-image: url("../img/mecanica.jpg");
+}
+.oleo{
+
+    background-image: url("../img/oleo.jpg");
+}
+.pneus{
+
+    background-image: url("../img/pneus.jpg");
+}
+
+.nome-servico{
+
+
+    font-size: 20px;
+
+}
+.nome-servico2{
+
+
+    font-size: 20px;
+
+
+}
+.nome-servico3{
+
+
+    font-size: 20px;
+
+}
+.nome-servico4{
+
+
+    font-size: 20px;
+
+}
+
+.desc-servico{
+
+    float: left;
+    margin-left: 30px;
+}
+
+.botaosin{
+
+    margin-top: 50px;
+}
+
+.ver{
+
+    width: 200px;
+    height: 40px;
+    background-color: #555;
+    color: #f7f7f7;
+    border: none;
+    border-bottom: 3px solid #1a1a1a;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/*css da janela modal*/
+.caixa{
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #1a1a1a;
+}
+.nome-modal{
+
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.lista-modal{
+
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    color: #1a1a1a;
+    border-radius: 5px
+}
+
+.fechar{
+
+    border: none;
+    background-color: #F39C12;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+/*secundario*/
+
+.secundario{
+
+    background-image: url("../img/mecanico.jpg");
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    border-top: 3px solid #F39C12;
+    border-bottom: 3px solid #F39C12;
+    width: 1000px;
+
+}
+
+.textos2{
+
+    width: 400px;
+    height: 140px;
+    padding: 10px;
+    margin-left: 550px;
+}
+
+.textos2 h1{
+
+
+    font-size: 25px;
+}
+
+.textos2 h2{
+
+    font-size: 15px;
+}
+
+
+/*pagina sobre*/
+
+.tit-sobre{
+
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-top: 60px;
+}
+
+.tit-sobre3{
+
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    width: 800px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+.tit-sobre2{
+
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.foto-sobre{
+
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/images.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 30px;
+    margin-left: 80px;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.foto-sobre2{
+
+    width: 300px;
+    height: 250px;
+    background-image: url("../img/cliente.jpg");
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    float: right;
+    margin: 30px;
+    margin-left: 80px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+.texto-sobre{
+
+    font-size: 18px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+}
+
+
+.texto-sobre2{
+
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+/*pagina de contato*/
+
+.quarto{
+
+    min-height: 550px;
+    margin-top: 30px;
+    background-color: #F39C12;
+    padding-top: 20px;
+    margin-top: 0px;
+    padding: 30px;
+    border-bottom: 2px solid #1a1a1a;
+    width: 945px;
+}
+
+.form-contato{
+
+    width: 450px;
+    margin-top: 40px;
+    float: left;
+    position: relative;
+}
+
+.caixa{
+
+    box-shadow: none;
+}
+
+.btn-enviar{
+
+    width: 300px;
+    height: 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.btn-enviar:hover{
+
+    transition: 0.4s;
+    color: #fff;
+    background-color: #D35400;
+}
+
+.l-contato{
+
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.mapa{
+
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    float: left;
+    position: relative;
+    margin-left: 40px;
+}
+
+.textinho2{
+
+
+    margin-top: 50px;
+    margin-left: 300px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.copyright{
+
+    font-size: 16px;
+    padding: 20px;
+    background-color: #f7f7f7;
+
+}
+.esquerda{
+
+    width: 500px;
+}
+
+/*desejo me cadastrar*/
+
+.mandmsg{
+    width: 220px;
+    height: 30px;
+    background-color: #555;
+    color: #f7f7f7;
+    border: none;
+    border-bottom: 3px solid #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 6px;
+    text-decoration: none;
+
+    
+}
+
+.mandmsg:hover{
+
+    text-decoration: none;
+    background-color: #aaa;
+    transition: 1s;
+}
+
+.texto-cadastro{
+
+    font-size: 18px;
+    margin-top:30px;
+    width: 500px;
+    text-align: justify;
+
+    
+}
