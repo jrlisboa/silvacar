@@ -4,8 +4,9 @@
 	<title>Silvacar | Centro Automotivo</title>
  	<meta charset="UTF-8"></meta>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
   <link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+  
 
   <?php
 

@@ -5,6 +5,7 @@
   <meta charset="UTF-8"></meta>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
   <script src="js/menu.js"></script>
   <script>
   
@@ -101,26 +102,58 @@
 
               <div class="nome-modal">Novo serviço:</div></br><br/>
               <div class="lista-modal" align="left"><br/>
-                  <form align="center" action="cadastroserv.php" method="post">
-                <span class="l-contato-cadastro">Nome do cliente:</span></br>
-                <input type="text" name="nome" class="caixa1"></input></br></br>
+                  <form align="center" action="cadserv.php" method="post">
 
-                <span class="l-contato-cadastro">Serviço:</span></br>
-                <input type="text" name="servico" class="caixa1"></input></br></br>
+                <span class="l-contato-cadastros">Login do cliente:</span></br>
+                <select name="nome" class="caixa5">
+                  <option>Selecione...</option>
 
-                <span class="l-contato-cadastro">Modelo de carro:</span></br>
-                <input type="text" name="modelo" class="caixa1"></input></br></br>
+                  <?php
+                        //selecionar todos os clientes
 
-                <span class="l-contato-cadastro">estimativa de entrega:</span></br>
+                        $sel_clientes = mysql_query("SELECT * FROM user WHERE login!='admin'");
+
+                        while ($nomes = mysql_fetch_array($sel_clientes)) {
+                          ?>
+                            <option><?php echo $nomes['login']?></option>
+                          <?php
+                        }
+                  ?>
+                </select><br/><br/>
+
+                <span class="l-contato-cadastros">Servico:</span></br>
+                <select name="servico" class="caixa5">
+                  <option>Selecione...</option>
+
+                  <?php
+                        //selecionar todos os clientes
+
+                        $sel_servs = mysql_query("SELECT * FROM tipo");
+
+                        while ($nomes = mysql_fetch_array($sel_servs)) {
+                          ?>
+                            <option><?php echo $nomes['nome']?></option>
+                          <?php
+                        }
+                  ?>
+                </select><br/><br/>
+
+                <span class="l-contato-cadastros">Data inicial:</span></br>
+                <input type="date" name="inicio" class="caixa1"></input></br></br>
+
+                <span class="l-contato-cadastros">Estimativa de entrega:</span></br>
                 <input type="date" name="entrega" class="caixa1"></input></br></br>
 
-                <span class="l-contato-cadastro">preço:</span></br>
+                <span class="l-contato-cadastros">preço:</span></br>
                 <input type="text" name="preco" class="caixa1"></input></br></br>
 
-                <input type="submit" name="cadastrar-servico" class="btn-cadastrar" value="Cadastrar"></input>
-              </form></div>
+                <input type="submit" name="cadastrar-servico" class="btn-cadastrar1" value="Cadastrar"></input>
+              </form>
+
+              <input class="fechar_form" name="voltar" type="button" onclick="fechar()" value="Voltar" />
+            </div>
                   
-                  <input class="fechar" name="voltar" type="button" onclick="fechar()" value="Voltar" />
+                  
             </dialog>
       <div class="botoes" align="center">
 
@@ -154,6 +187,9 @@
         <li><a href="#contato" >Contato</a></li>
         <?php if($niv == 0){ ?>
         <li><a href="perfil.php" >Perfil do Cliente</a></li>
+      <?php } ?>
+        <?php if($niv == 1){ ?>
+        <li><a href="adm.php" >Perfil do Administrador</a></li>
       <?php } ?>
       </ul>
     </div>

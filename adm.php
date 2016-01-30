@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html>
-<head>
+	<head>
 	<title>Silvacar | Centro Automotivo</title>
-  <meta charset="UTF-8"></meta>
+  	<meta charset="UTF-8"></meta>
 
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-  <link rel="stylesheet" type="text/css" href="css/cadastro.css">
+  	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
 
     <?php
 
@@ -31,17 +30,27 @@
     $nomes = mysql_fetch_array($executar2) or die(mysql_error());
     $nome = $nomes['nome'];
 
-    if($niv == 1){
-          header("location: adm.php");
+    if($niv == 0){
+          header("location: index.php");
     }
 
-    //selecionar todos os dados que vão para a tabela
+    //selecionar todos os dados que vão para a tabela serviços
 
-    $executar3 = mysql_query("SELECT * FROM serv WHERE cliente='$login'");
+    $executar3 = mysql_query("SELECT * FROM serv");
+
+    //selecionar todos os dados que vão para a tabela clientes
+
+    $executar6 = mysql_query("SELECT * FROM user");
+
+    //selecionar id do cliente
+
+    $query = mysql_query("SELECT id FROM user WHERE login='$login' and senha='$senha'");
+    $ids = mysql_fetch_array($query) or die(mysql_error());
+    $id = $ids['id'];
 
     //ver quantos servicos estão em andamento
 
-    $executar4 = mysql_query("SELECT estado FROM serv WHERE estado=0 and cliente='$login'");
+    $executar4 = mysql_query("SELECT estado FROM serv WHERE estado=0");
     $num_andamento= 0;
 
     while ($andamento = mysql_fetch_array($executar4)) {
@@ -50,14 +59,13 @@
 
     //ver quantos servicos estão concluidos
 
-    $executar5 = mysql_query("SELECT estado FROM serv WHERE estado=1 and cliente='$login'");
+    $executar5 = mysql_query("SELECT estado FROM serv WHERE estado=1");
     $num_concluido= 0;
 
     while ($concluido = mysql_fetch_array($executar5)) {
       $num_concluido = $num_concluido + 1;
     }
 ?>
-  
 </head>
 <body>
 
@@ -78,7 +86,7 @@
 
     <div class="tit-perfil">
     
-      <span>Página do Cliente <a href="sair.php" class="sair">Sair</a> <a href="index.php" class="voltar">Voltar ao Site</a></span>
+      <span>Página do Administrador <a href="sair.php" class="sair">Sair</a> <a href="index.php" class="voltar">Voltar ao Site</a></span>
     </div>
     
     <div class="esquerda">
@@ -122,16 +130,18 @@
   </div>
 
   <div class="tudo-tabelinha">
-      <div class="tit-tabelinha"><span>Tabela de serviços:</span></div>
+      <div class="tit-tabelinha"><span>Tabela GERAL de serviços:</span></div>
 
       <div class="tabelinha">
         <table>
           <tr class="topo-tabela">
             <td>Serviço Prestado</td>
             <td>Data de início</td>
+            <td>Cliente</td>
             <td>Previsão de entrega</td>
             <td>Valor orçamentado</td>
             <td>Estado</td>
+            <td>Ações</td>
           </tr>
 
           <tr>
@@ -143,6 +153,7 @@
                 <tr>
                     <td><?php echo $servs['serv']?></td>
                     <td><?php echo $servs['dat_ini']?></td>
+                    <td><?php echo $servs['cliente']?></td>
                     <td><?php echo $servs['dat_ent']?></td>
                     <td><?php echo "R$".$servs['valor']?></td>
                     <td><?php
@@ -151,9 +162,17 @@
                         echo "Em andamento";
                      }else{
 
-                        echo "Concluído";
+                        echo "Concluído ";
                      }
                      ?></td>
+                     <td><?php
+                        if ($servs['estado'] == 0){
+                        echo "<a  href='conclui.php?id=".$servs['id']."' class='voltar1'>Concluir</a><a  href='deleta.php?id=".$servs['id']."' class='sair1'>Excluir</a>";
+                     }else{
+
+                        echo "<a  href='deleta.php?id=".$servs['id']."' class='sair1'>Excluir</a>";
+                     }
+                     ?></td>  
                 </tr>
 
             <?php
@@ -166,6 +185,47 @@
       </div>
 
   </div></center>
+
+        <center><div class="tit-tabelinha"><span>Tabela GERAL de clientes:</span></div>
+
+      <div class="tabelinha">
+        <table>
+          <tr class="topo-tabela">
+                    <td>Nome</td>
+                    <td>Email</td>
+                    <td>CPF</td>
+                    <td>Telefone</td>
+                    <td>Endereço</td>
+                    <td>Login</td>
+                    <td>Senha</td>
+          </tr>
+
+          <tr>
+             
+             <?php 
+
+              while ($servs = mysql_fetch_array($executar6)) {
+                ?>
+                <tr>
+                    <td><?php echo $servs['nome']?></td>
+                    <td><?php echo $servs['email']?></td>
+                    <td><?php echo $servs['cpf']?></td>
+                    <td><?php echo $servs['telefone']?></td>
+                    <td><?php echo $servs['endereco']?></td>
+                    <td><?php echo $servs['login']?></td>
+                    <td><?php echo $servs['senha']?></td>
+                </tr>
+
+            <?php
+              }
+               ?>
+
+          </tr>
+        </table>
+
+      </div>
+
+  		</div></center>
 
 </body>
 </html>

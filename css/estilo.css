@@ -112,6 +112,10 @@
     width: 80px;
     margin-right: 10px;
 }
+.botao4:hover{
+
+    cursor: pointer;
+}
 
 .botao1:hover{
 
@@ -354,6 +358,7 @@
 
 
 /*css da janela modal*/
+
 .caixa{
 
     border: none;
@@ -364,11 +369,16 @@
 
     font-size: 20px;
     padding-top: 10px;
+    margin-bottom: -20px;
+    background-color: #E74C3C;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .lista-modal{
 
-    background-color: #ccc;
+    background-color: #ECF0F1;
     margin: 10px;
     padding: 10px;
     color: #1a1a1a;
@@ -383,6 +393,21 @@
     width: 100px;
     height: 30px;
     margin-top: 20px;
+}
+
+.fechar_form{
+
+    border: none;
+    background-color: #F39C12;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+    float: right;
+    position: relative;
+    margin-top: -55px;
+    margin-right: 20px;
+    border-radius: 5px;
 }
 
 /*secundario*/
@@ -611,4 +636,10 @@
     text-align: justify;
 
     
+}
+
+.topo-tabela{
+
+    background-color: #ECF0F1;
+    color: #555;
 }
