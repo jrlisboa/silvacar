@@ -18,3 +18,6 @@ O adiministrador tem a possibilidade de efetuar cadastro de clientes e de novos 
 
 ###Linguagens
 Se trata de um sistema em PHP / mySQL. Contribuições serão bem-vindas para a construção de um futuro sistema genérico.
+
+###Novidades
+O sistema está sendo atualizado no momento para novas tecnologias como AngularJs, JQuery, e código mais Optimizado.
